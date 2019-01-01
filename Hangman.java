@@ -1,5 +1,3 @@
-package com.harthoric.board.games.hangman;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,7 +28,7 @@ public class Hangman {
 
 	public static void main(String args[]) {
 		try {
-			LineIterator it = FileUtils.lineIterator(new File("res/hangman/stages"), "UTF-8");
+			LineIterator it = FileUtils.lineIterator(new File("stages"), "UTF-8");
 			String line = "", manASCII = "";
 			ArrayList<String> hangmen = new ArrayList<>();
 			// Store each stage of the hanging man
